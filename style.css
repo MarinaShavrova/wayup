@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans&family=Ubuntu:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Работает в Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(5, 155, 248, 0.854) rgba(255, 251, 0, 0.763);
+}
+
+/* Работает в Chrome, Edge и Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 251, 0, 0.763);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 5px solid rgba(5, 155, 248, 0.854);
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.dream__logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 60px;
+  width: 100px;
+}
+
+.dream {
+  background: linear-gradient(150deg, #00bfff 30%, #0090dc 58.12%) no-repeat;
+  min-height: 823px;
+}
+
+.dream__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dream__image {
+  margin-right: -60px;
+  margin-top: 10px;
+}
+
+.dream__body {
+  color: white;
+}
+
+.dream__body h1 {
+  font-size: 37px;
+  line-height: 48px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+
+.dream__body span {
+  font-size: 59px;
+  line-height: 78px;
+}
+.dream__body p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  width: 410px;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.35px;
+  margin: 20px 0;
+}
+
+.dream__button {
+  display: block;
+  margin-top: 40px;
+  width: 222px;
+  text-align: center;
+  padding: 15.5px 0;
+  text-decoration: none;
+}
+
+.button {
+  background: #ffd429;
+  font-size: 15px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  color: black;
+}
+
+.what {
+  min-height: 498px;
+  margin: 0px auto;
+}
+
+.what__title {
+  font-size: 30px;
+  line-height: 25px;
+  letter-spacing: 0.85px;
+  padding: 105px 0 75px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.what__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.what__col {
+  flex: 0 1 310px;
+  text-align: center;
+}
+
+.what__icon {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.what__subtitle {
+  font-size: 19px;
+  letter-spacing: 0.5px;
+  padding: 25px 0 20px 0;
+  font-weight: bold;
+}
+
+.what__text {
+  font-size: 15px;
+}
+
+.form {
+  background-color: #ecf3f8;
+  min-height: 599px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__title {
+  font-size: 30px;
+  line-height: 25px;
+  text-align: center;
+  padding: 0px 0 53px 0;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form__input {
+  width: 343px;
+  height: 48px;
+  border: 1px solid #bbbbbb;
+  padding-left: 25px;
+  border-radius: 3px;
+  margin: 8px 0;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+}
+
+.form__button {
+  margin-top: 5px;
+  width: 343px;
+  height: 56px;
+}
+
+.footer {
+  background-color: #164d7a;
+}
+
+.footer__row {
+  display: flex;
+  height: 140px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .what__row,
+  .dream__row {
+    margin: 5px;
+  }
+  .dream__body {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .dream__body p {
+    width: 95%;
+  }
+  .what {
+    min-height: 520px;
+  }
+
+  .what__col {
+    flex: 0 1 33.333%;
+  }
+
+  .dream__image {
+    display: none;
+  }
+
+  .dream__button,
+  .form__input,
+  .form__button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  .dream__body h1 {
+    font-size: 30px;
+  }
+
+  .dream__body span {
+    font-size: 45px;
+  }
+  .dream__body p {
+    width: 100%;
+  }
+  .what__row {
+    flex-direction: column;
+  }
+  .what__col {
+    margin: 10px 0;
+  }
+}
