@@ -44,6 +44,7 @@ body {
 .dream {
   background: linear-gradient(150deg, #00bfff 30%, #0090dc 58.12%) no-repeat;
   padding-bottom: 70px;
+  overflow: hidden;
 }
 
 .dream__row {
