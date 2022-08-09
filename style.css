@@ -9,13 +9,11 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-/* Работает в Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(5, 155, 248, 0.854) rgba(255, 251, 0, 0.763);
 }
 
-/* Работает в Chrome, Edge и Safari */
 *::-webkit-scrollbar {
   width: 5px;
 }
@@ -28,17 +26,6 @@ body {
   background-color: blue;
   border-radius: 20px;
   border: 5px solid rgba(5, 155, 248, 0.854);
-}
-
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.content {
-  flex: 1 1 auto;
 }
 
 .container {
@@ -56,7 +43,7 @@ body {
 
 .dream {
   background: linear-gradient(150deg, #00bfff 30%, #0090dc 58.12%) no-repeat;
-  min-height: 823px;
+  padding-bottom: 70px;
 }
 
 .dream__row {
@@ -117,8 +104,8 @@ body {
 }
 
 .what {
-  min-height: 498px;
   margin: 0px auto;
+  padding-bottom: 120px;
 }
 
 .what__title {
@@ -142,7 +129,6 @@ body {
 
 .what__icon {
   height: 70px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -160,7 +146,8 @@ body {
 
 .form {
   background-color: #ecf3f8;
-  min-height: 599px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,9 +188,6 @@ form {
 
 .footer {
   background-color: #164d7a;
-}
-
-.footer__row {
   display: flex;
   height: 140px;
   justify-content: center;
@@ -230,9 +214,6 @@ form {
 @media (max-width: 700px) {
   .dream__body p {
     width: 95%;
-  }
-  .what {
-    min-height: 520px;
   }
 
   .what__col {
